@@ -1,3 +1,4 @@
+# makeCacheMatrix is a function that creates a matrix object that can cache its inverse. This is my submission to the Coursera R Programming assignment for week 2. Some of the text and code is taken from the assignment page for this course.
 makeCacheMatrix <- function(x = matrix()) {
     #x is a square invertible matrix
     inv <- NULL
@@ -16,6 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 #m = makeCacheMatrix(x)
 #cacheSolve(m)
 
+#cacheSolve computes the inverse of the matrix returned by makeCacheMatrix. If the inverse has already been calculated and the matrix has not changed, then the cachesolve should retrieve the inverse from the cache.
 cacheSolve <-function(x, ...) {
     #x is from makeCacheMatrix
     inv <- x$getinverse()
